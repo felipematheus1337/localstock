@@ -23,5 +23,13 @@ namespace Localstockk.Data.Repositories
         }
 
         public void SaveChanges() => _context.SaveChanges();
+
+        public Produto Create(Produto produto)
+        {
+            var entityEntry =  _context.Produtos.Add(produto);
+            _context.SaveChanges();
+            return entityEntry.Entity;
+
+        }
     }
 }
