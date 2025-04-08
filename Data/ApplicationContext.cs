@@ -12,7 +12,7 @@ namespace Localstockk.Data
     public class ApplicationContext : DbContext
     {
         public DbSet<Produto> Produtos { get; set; }
-        private readonly string DB_URL = "";
+        private readonly string DB_URL = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=localstock;Integrated Security=True";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
