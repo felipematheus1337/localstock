@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Localstockk.Data.Configurations;
 using Localstockk.Domain;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +23,7 @@ namespace Localstockk.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
+            modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
         }
 
 

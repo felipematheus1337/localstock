@@ -12,6 +12,8 @@ namespace Localstockk.Domain
 
         public decimal Value { get; set; }
 
+        public int Quantidade {  get; set; }
+
         public ProductType Type { get; set; }
 
 
