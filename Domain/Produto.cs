@@ -6,13 +6,13 @@ namespace Localstockk.Domain
     {
         public int Id { get; set; }
 
-        public String name { get; set; }
+        public String Name { get; set; }
 
-        public string description { get; set; }
+        public string Description { get; set; }
 
         public decimal Value { get; set; }
 
-        public ProductType type { get; set; }
+        public ProductType Type { get; set; }
 
 
 
