@@ -7,6 +7,11 @@ namespace Localstockk.Data.Repositories
     {
         private readonly ApplicationContext _context;
 
+        public ProdutoRepository(ApplicationContext context)
+        {
+            _context = context;
+        }
+
         public Produto ObterPorId(int id) => _context.Produtos.Find(id);
 
         public IEnumerable<Produto> ObterTodos() => _context.Produtos.ToList();

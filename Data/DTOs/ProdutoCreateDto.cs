@@ -18,5 +18,14 @@ namespace Localstockk.Data.DTOs
         public int Quantidade { get; set; }
 
         public ProductType Type { get; set; }
+
+        public ProdutoCreateDto(string name, string description, decimal value, int quantity, ProductType tipo)
+        {
+            Name = name; 
+            Description = description;
+            Value = value;
+            Quantidade = quantity;
+            Type = tipo;
+        }
     }
 }
