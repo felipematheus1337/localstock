@@ -13,9 +13,10 @@ namespace Localstockk.Services
         private readonly IProdutoRepository _repository;
         private readonly IMapper _mapper;
 
-        public ProdutoService(IProdutoRepository repository)
+        public ProdutoService(IProdutoRepository repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
 
